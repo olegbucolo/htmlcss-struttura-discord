@@ -2,5 +2,142 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: black;
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --section-spacing-horizontal: 4rem;
+    --section-spacing-vertical: 12rem;
+}
+
+header {
+    width: 100vw;
+    height: 8rem;
+    position: absolute;
+}
+
+/* NAV @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+nav {
+    margin: 0 auto;
+    background-color: #5865f2;
+    width: 126rem;
+    max-width: 100vw;
+    height: inherit;
+    display: flex;
+    padding: 0 var(--section-spacing-horizontal);
+}
+
+nav > * {
+    flex: 1;
+    height: inherit;
+    width: auto;
+}
+nav > :nth-child(2) {
+    flex-grow: 2;
+}
+
+/* NAV
+    |__logo @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    |__link
+    |__button
+*/
+
+.logo {
+    background-image: url(../svgs/discord-svgrepo-com.svg);
+    height: inherit;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+    color: white;
+}
+
+/* NAV
+    |__logo
+    |__link @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    |__button
+*/
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul * {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header-link {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
+/* NAV
+    |__logo 
+    |__link
+    |__btn @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+*/
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+button {
+    padding: 1.1rem 1.4rem;
+    font-size: 14px;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 100;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0 1rem 3rem -1.4rem black;
+}
+
+/* SECTION 1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+section {
+    width: 100vw;
+}
+
+section:nth-of-type(1) {
+    background-color: #5865f2;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*
+    
+section:nth-of-type(2) {
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+} 
+
+*/
