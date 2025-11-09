@@ -154,7 +154,7 @@ section:not(:nth-of-type(5)) .container {
 }
 
 .text {
-    background-color: rgb(243, 38, 38);
+    background-color: #f32626;
 }
 
 /* SECTION 1 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -286,7 +286,7 @@ section:nth-of-type(6) .container .btn {
 /* FOOTER @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 footer {
-    height: 60vh;
+    height: 80vh;
     width: 100vw;
     background-color: rgb(47, 45, 45);
     justify-content: center;
@@ -303,11 +303,7 @@ footer .container {
     padding: 8rem 0;
 }
 
-footer .container .top {
-    width: 100%;
-    flex: 6 1 0;
-    background-color: red;
-}
+
 
 footer .container .bottom {
     width: 100%;
@@ -342,4 +338,28 @@ footer .container .bottom .left a {
 footer .container .bottom .right .btn button {
     background-color: #5865f2;
     color: white;
+}
+
+footer .container .top {
+    width: 100%;
+    flex: 6 1 0;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+footer .top .right {
+    flex: 2;
+    display: flex;
+}
+
+footer .top .left {
+    flex: 1;
+    background-color: #5865f2;
+}
+
+footer .top .right li{
+    height: 100%;
+    flex: 1;
+    background-color: #f32626;
+    border: .1rem dashed;
 }
